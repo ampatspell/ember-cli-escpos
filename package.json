@@ -20,15 +20,22 @@
     "test:all": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^6.6.0"
+    "broccoli-funnel": "^2.0.1",
+    "broccoli-merge-trees": "^3.0.0",
+    "ember-cli-babel": "^6.6.0",
+    "webfontloader": "^1.6.28",
+    "ember-cli-htmlbars": "^2.0.1",
+    "ember-cli-sass": "^7.1.7",
+    "ember-fetch": "^3.4.5"
   },
   "devDependencies": {
+    "body-parser": "^1.18.2",
     "broccoli-asset-rev": "^2.4.5",
+    "data-uri-to-buffer": "^2.0.0",
     "ember-ajax": "^3.0.0",
     "ember-cli": "~3.1.2",
     "ember-cli-dependency-checker": "^2.0.0",
     "ember-cli-eslint": "^4.2.1",
-    "ember-cli-htmlbars": "^2.0.1",
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-qunit": "^4.1.1",
@@ -43,14 +50,21 @@
     "ember-source": "~3.1.0",
     "ember-source-channel-url": "^1.0.1",
     "ember-try": "^0.2.23",
+    "escpos": "^2.4.5",
     "eslint-plugin-ember": "^5.0.0",
     "eslint-plugin-node": "^6.0.1",
+    "express": "^4.16.3",
     "loader.js": "^4.2.3"
   },
   "engines": {
-    "node": "^4.5 || 6.* || >= 7.*"
+    "node": ">= 8.*"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "before": [
+      "serve-files-middleware",
+      "history-support-middleware",
+      "proxy-server-middleware"
+    ]
   }
 }

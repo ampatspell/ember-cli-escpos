@@ -1,0 +1,96 @@
+// https://fonts.google.com/specimen/Roboto+Mono?selection.family=Roboto+Mono:400,700
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&subset=latin-ext');
+$font-family: 'Roboto Mono', monospace;
+
+@mixin ui-sketch() {
+  * {
+    box-sizing: border-box;
+    font-family: $font-family;
+  }
+}
+
+.ui-sketch {
+  @include ui-sketch;
+
+  $w: 384px;
+  width: $w + 12px;
+  margin-bottom: 5px;
+  > .ui-sketch-header {
+    margin-bottom: 20px;
+  }
+  > .ui-sketch-actions {
+    margin-top: 25px;
+  }
+
+  .ui-sketch-header {
+    > .id {
+      font-size: 24px;
+      &:before {
+        content: '#';
+      }
+    }
+  }
+
+  .ui-sketch-preview {
+    > .ui-sketch-preview-task {
+      > .ui-sketch-preview-task-content {
+        border: 1px solid fade-out(#000, 0.90);
+        margin-bottom: 1px;
+        border-radius: 3px;
+        > .header {
+          font-size: 14px;
+          font-weight: 600;
+          padding: 5px 5px 5px 5px;
+          > .name {
+            display: inline-block;
+          }
+          > .value {
+            display: inline-block;
+            font-weight: 400;
+          }
+        }
+        > .placeholder {
+          padding: 0px 5px 5px 5px;
+          font-weight: 600;
+        }
+        &.image {
+          > .content {
+            padding: 0 5px 5px 5px;
+            > img {
+              max-width: 100%;
+            }
+          }
+        }
+        &.text {
+          > .content {
+            padding: 0 5px 5px 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .ui-sketch-actions {
+    > .action {
+      -webkit-appearance: none;
+      font-family: $font-family;
+      font-size: 14px;
+      border: 1px solid fade-out(#000, 0.90);
+      border-radius: 3px;
+      padding: 5px 10px;
+      outline: none;
+      display: block;
+      width: 100%;
+    }
+  }
+
+}
+
+.ui-sketches {
+  @include ui-sketch;
+  > .sketch {
+    a {
+      color: #000;
+    }
+  }
+}

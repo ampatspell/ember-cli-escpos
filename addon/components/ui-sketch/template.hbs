@@ -1,0 +1,11 @@
+{{#if hasBlock}}
+  {{yield (hash
+    header=(component 'ui-sketch/header' tasks=tasks sketch=sketch)
+    preview=(component 'ui-sketch/preview' tasks=tasks sketch=sketch)
+    actions=(component 'ui-sketch/actions' tasks=tasks sketch=sketch print=(action 'print'))
+  )}}
+{{else}}
+  {{ui-sketch/header tasks=tasks sketch=sketch}}
+  {{ui-sketch/preview tasks=tasks sketch=sketch}}
+  {{ui-sketch/actions tasks=tasks sketch=sketch print=(action 'print')}}
+{{/if}}

@@ -1,0 +1,18 @@
+<div class="header">
+  <div class="name">{{task.name}}</div>
+  {{#if value}}
+    <div class="value">{{value}}</div>
+  {{/if}}
+</div>
+
+{{#if task.isLoading}}
+  <div class="placeholder">Loading…</div>
+{{else if task.isError}}
+  <div class="placeholder">{{task.error}}</div>
+{{else}}
+  {{#if hasBlock}}
+    <div class="content">
+      {{yield}}
+    </div>
+  {{/if}}
+{{/if}}
