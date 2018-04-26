@@ -61,6 +61,9 @@ export default EmberObject.extend({
   // lt, ct, rt
   align: task('align', value => ({ value }), { name: 'value' }),
 
+  // a: 32 chars
+  // b: 42 chars
+  // c: 42 chars
   // a, b, c
   font: task('font', value => ({ value }), { name: 'value' }),
 
