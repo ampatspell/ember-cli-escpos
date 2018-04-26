@@ -26,7 +26,9 @@
     "webfontloader": "^1.6.28",
     "ember-cli-htmlbars": "^2.0.1",
     "ember-cli-sass": "^7.1.7",
-    "ember-fetch": "^3.4.5"
+    "ember-fetch": "^3.4.5",
+    "escpos": "^2.4.5",
+    "express": "^4.16.3"
   },
   "devDependencies": {
     "body-parser": "^1.18.2",
@@ -50,10 +52,8 @@
     "ember-source": "~3.1.0",
     "ember-source-channel-url": "^1.0.1",
     "ember-try": "^0.2.23",
-    "escpos": "^2.4.5",
     "eslint-plugin-ember": "^5.0.0",
     "eslint-plugin-node": "^6.0.1",
-    "express": "^4.16.3",
     "loader.js": "^4.2.3"
   },
   "engines": {
