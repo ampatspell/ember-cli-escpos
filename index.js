@@ -9,6 +9,8 @@ module.exports = {
     this._super.included(app);
     app.import('vendor/ember-cli-escpos/webfontloader.js');
     app.import('vendor/ember-cli-escpos/webfontloader-shim.js');
+    app.import('vendor/ember-cli-escpos/konva.js');
+    app.import('vendor/ember-cli-escpos/konva-shim.js');
   },
   serverMiddleware(config) {
     let app = config.app;
@@ -28,6 +30,13 @@ module.exports = {
     trees.push(new Funnel(path.join(path.dirname(require.resolve('webfontloader'))), {
       files: [
         'webfontloader.js'
+      ],
+      destDir: '/ember-cli-escpos'
+    }));
+
+    trees.push(new Funnel(path.dirname(require.resolve('konva')), {
+      files: [
+        'konva.js'
       ],
       destDir: '/ember-cli-escpos'
     }));
