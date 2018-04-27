@@ -29,6 +29,19 @@ $font-family: 'Roboto Mono', monospace;
         content: '#';
       }
     }
+    > .links {
+      margin-top: 5px;
+      > .link {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+        color: #000;
+        &.disabled {
+          color: #999;
+          user-select: none;
+        }
+      }
+    }
   }
 
   .ui-sketch-preview {

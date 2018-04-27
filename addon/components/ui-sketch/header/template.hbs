@@ -1,1 +1,16 @@
 <div class="id">{{sketch.id}}</div>
+
+{{#if prevOrNext}}
+  <div class="links">
+    {{#if prev}}
+      {{link-to '←' route prev class='link'}}
+    {{else}}
+      <span class="link disabled">←</span>
+    {{/if}}
+    {{#if next}}
+      {{link-to '→' route next class='link'}}
+    {{else}}
+      <span class="link disabled">→</span>
+    {{/if}}
+  </div>
+{{/if}}
