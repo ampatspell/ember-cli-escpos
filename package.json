@@ -1,9 +1,11 @@
 {
   "name": "ember-cli-escpos",
   "version": "0.0.4",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Ember addon for printing stuff with POS receipt printer",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "creative-coding",
+    "escpos"
   ],
   "license": "MIT",
   "author": "",
