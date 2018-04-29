@@ -4,4 +4,6 @@
 * Draw a sketch
 * Print
 
-![screenshot](/screenshot.png)
+![screenshot](/pics/screenshot.png)
+
+![scan-2](/pics/receipt003.png)
