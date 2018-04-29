@@ -4,6 +4,6 @@
 * Draw a sketch
 * Print
 
-![screenshot](/pics/screenshot.png)
+![screenshot](https://github.com/ampatspell/ember-cli-escpos/raw/master/pics/screenshot.png)
 
-![scan-2](/pics/receipt003.png)
+![scan-2](https://github.com/ampatspell/ember-cli-escpos/raw/master/pics/receipt003.png)
