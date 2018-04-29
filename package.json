@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-escpos",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
     "ember-addon"
@@ -17,7 +17,8 @@
     "lint:js": "eslint ./*.js addon addon-test-support app config lib server test-support tests",
     "start": "ember serve",
     "test": "ember test",
-    "test:all": "ember try:each"
+    "test:all": "ember try:each",
+    "bump": "npm version patch; git push --follow-tags"
   },
   "dependencies": {
     "broccoli-funnel": "^2.0.1",

@@ -1,5 +1,5 @@
-import createCanvas from '../-private/canvas/create-canvas';
-import canvasToBlob from '../-private/canvas/canvas-to-blob';
+import createCanvas from './create-canvas';
+import canvasToBlob from './canvas-to-blob';
 
 export {
   createCanvas,

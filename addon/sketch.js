@@ -1,8 +1,10 @@
 import Sketch from './-private/sketch';
 import { tasks } from './-private/computed';
+import { canvas } from './canvas/computed';
 
 export {
-  tasks
+  tasks,
+  canvas
 }
 
 export default Sketch;
